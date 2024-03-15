@@ -28,7 +28,7 @@ div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: @dark-gray;
+  background-color: @dark-grey;
   padding: 2px 27px;
 }
 </style>

@@ -1,20 +1,42 @@
 <template>
   <div>
-    <span>Dashboard</span>
+    <div class="container">
+      <TotalBalance/>
+      <CashFlow/>
+    </div>
+    <StatisticsDashboard/>
   </div>
 </template>
 
 <script>
+import TotalBalance from './TotalBalance';
+import CashFlow from './CashFlow';
+import StatisticsDashboard from './StatisticsDashboard';
+
 export default {
   name: "DashboardMain",
+  components:{
+    TotalBalance,
+    CashFlow,
+    StatisticsDashboard,
+  },
   props: {
     msg: String,
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 
+  div{
+    background: @dark-grey;
+    padding: 60px 60px;
+    
+    .container{
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
 
+  }
 </style>
