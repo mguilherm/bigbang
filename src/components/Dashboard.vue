@@ -36,7 +36,7 @@ export default {
 
 .dark-wrapper {
   background: @dark-grey;
-  padding: 60px 100px;
+  padding: 60px 100px 100px;
 
   .container {
     display: flex;
@@ -46,7 +46,7 @@ export default {
 }
 
 .light-wrapper{
-  padding: 200px 100px 0;
+  padding: 100px 100px 0;
   display: flex;
   flex-direction: row; 
   justify-content: space-between; 

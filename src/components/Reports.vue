@@ -21,5 +21,6 @@
 <style lang="less" scoped>
   div {
     width: 100%;
+    padding: 46px 0 50px;
   }
 </style>

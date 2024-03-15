@@ -5,8 +5,14 @@
       <h2 class="subtitle">Painel de Estatísticas</h2>
       <p>últimos 7 dias</p>
     </span>
-    <div class="container cards-wrapper">
-      <CardDefault v-for="card in statisticsCards" :key="card.id" :card="card"/>
+    <div class="cards-wrapper">
+      <div class="cards-container">
+        <CardDefault
+          v-for="card in statisticsCards"
+          :key="card.id"
+          :card="card"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -19,23 +25,23 @@ export default {
   data() {
     return {
       statisticsCards: [
-      {
-        id: 1,
-        typeOfFlow: "Conta PJ",
-        value: 39.882,
-      },
-      {
-        id: 2,
-        typeOfFlow: "Recebimentos",
-        value: 765.88,
-      },
-      {
-        id: 3,
-        typeOfFlow: "Lucro",
-        value: 15.887,
-      },
-    ],
-  };
+        {
+          id: 1,
+          typeOfFlow: "Conta PJ",
+          value: 39.882,
+        },
+        {
+          id: 2,
+          typeOfFlow: "Recebimentos",
+          value: 765.88,
+        },
+        {
+          id: 3,
+          typeOfFlow: "Lucro",
+          value: 15.887,
+        },
+      ],
+    };
   },
   components: {
     Bubble,
@@ -50,7 +56,7 @@ export default {
   flex-direction: row;
   align-items: center;
   gap: 14px;
-  padding-bottom: 26px;
+  padding: 40px 0 26px;
   position: relative;
 
   h2 {
@@ -65,12 +71,22 @@ export default {
     font-size: 14px;
     margin: 0;
   }
+}
+.cards-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  left: 0;
 
-  &.cards-wrapper{
-    position: absolute;
+  .cards-container {
     display: flex;
-    justify-content: space-between;
-    width: 81%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    padding: 0 96px 26px;
   }
 }
 </style>
