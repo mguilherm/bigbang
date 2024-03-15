@@ -68,6 +68,9 @@ export default {
 
   &.cards-wrapper{
     position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 81%;
   }
 }
 </style>

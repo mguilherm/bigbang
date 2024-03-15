@@ -1,24 +1,29 @@
 <template>
   <div>
-    <div class="container">
-      <TotalBalance/>
-      <CashFlow/>
+    <div class="dark-wrapper">
+      <div class="container">
+        <TotalBalance />
+        <CashFlow />
+      </div>
+      <StatisticsDashboard />
     </div>
-    <StatisticsDashboard/>
+    <Reports class="light-wrapper"/>
   </div>
 </template>
 
 <script>
-import TotalBalance from './TotalBalance';
-import CashFlow from './CashFlow';
-import StatisticsDashboard from './StatisticsDashboard';
+import TotalBalance from "./TotalBalance";
+import CashFlow from "./CashFlow";
+import StatisticsDashboard from "./StatisticsDashboard";
+import Reports from "./Reports";
 
 export default {
   name: "DashboardMain",
-  components:{
+  components: {
     TotalBalance,
     CashFlow,
     StatisticsDashboard,
+    Reports,
   },
   props: {
     msg: String,
@@ -28,15 +33,22 @@ export default {
 
 <style scoped lang="less">
 
-  div{
-    background: @dark-grey;
-    padding: 60px 60px;
-    
-    .container{
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-    }
 
+.dark-wrapper {
+  background: @dark-grey;
+  padding: 60px 100px;
+
+  .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
   }
+}
+
+.light-wrapper{
+  padding: 200px 100px 0;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+}
 </style>

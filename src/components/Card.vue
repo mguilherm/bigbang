@@ -4,7 +4,7 @@
       {{ card.typeOfFlow }}
     </p>
     <h3>
-      {{ card.value }}
+      {{ card.value | currency}}
     </h3>
     <span>
       <button>Ver mais detalhes</button>  
@@ -26,6 +26,11 @@ export default {
       value: Number,
     },
   },
+  filters: {
+      currency(value){
+        return `R$ ${value.toLocaleString('pt-br', {minimumFractionDigits: 2})}`
+      }
+    }
 };
 </script>
 
@@ -34,11 +39,12 @@ export default {
   width: 350px;
   height: 200px;
   padding: 20px;
-  border: 1px solid @light-grey;
   background: @bg-color;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 7px 28px 0px rgba(0, 0, 0, 0.2);
+
 
   h3, p{
     margin: 0;

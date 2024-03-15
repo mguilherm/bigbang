@@ -29,6 +29,7 @@ div {
     height: 37px;
     color: @bg-color;
     padding: 8px 16px;
+    cursor: pointer;
     
     +button{
       margin-left: 10px;
