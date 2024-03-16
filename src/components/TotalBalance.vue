@@ -55,4 +55,14 @@ export default {
   }
 }
 }
+
+@media @tablets{
+  .container{
+    gap: 0;
+
+    .investments-label{
+      padding-top: 0;
+    }
+  }
+}
 </style>

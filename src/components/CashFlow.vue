@@ -55,4 +55,19 @@ div {
   }
   }
 }
+
+@media @smartphones{
+  
+div{
+  button{
+    padding: 8px 10px;
+    span{
+    &.container{
+      min-width: 180px;
+    }
+  }
+  }
+  
+ 
+}}
 </style>

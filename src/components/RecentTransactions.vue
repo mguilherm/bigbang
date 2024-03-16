@@ -4,7 +4,7 @@
       <span class="container">
         <GAIcon />
         <h3>Transações recentes</h3>
-        <p>últimos 7 dias</p>
+        <p class="last-7days">últimos 7 dias</p>
       </span>
 
       <a href="">Ver tudo</a>
@@ -77,6 +77,12 @@ div {
 
   .last-item{
     border-bottom: 1px solid @light-grey;
+  }
+}
+
+@media @tablets {
+  div{
+    max-width: 768px;
   }
 }
 </style>

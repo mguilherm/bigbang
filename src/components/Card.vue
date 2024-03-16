@@ -78,4 +78,25 @@ export default {
     }
   }
 }
+
+@media @tablets {
+  .card {
+    span {
+      width: 100%;
+
+      button {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media @smartphones {
+  .card{
+    height: fit-content;
+    h3{
+      margin-bottom: 0px;
+    }
+  }
+}
 </style>

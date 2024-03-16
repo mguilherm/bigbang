@@ -3,6 +3,7 @@
     <Logo />
     <NavigationMenu />
     <font-awesome-icon
+      id="bell"
       icon="fa-regular fa-bell"
       style="color: #fff"
       size="lg"
@@ -30,5 +31,25 @@ div {
   justify-content: space-between;
   background-color: @dark-grey;
   padding: 2px 27px;
+}
+
+@media @tablets{
+  #bell{
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    background: @pink;
+    padding: 20px;
+    border-radius: 50%;
+    z-index: 2;
+  }
+}
+
+@media @smartphones{
+  div{
+    padding: 15px 2px;
+    flex-direction: column;
+  }
+ 
 }
 </style>

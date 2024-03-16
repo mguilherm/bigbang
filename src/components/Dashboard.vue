@@ -50,5 +50,29 @@ export default {
   display: flex;
   flex-direction: row; 
   justify-content: space-between; 
+  gap: 50px;
 }
+
+@media @tablets {
+  .light-wrapper{
+    flex-direction: column; 
+    justify-content: center; 
+  }
+  .dark-wrapper{
+    .container{
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  }
+
+  @media @smartphones{
+    .dark-wrapper{
+      padding: 5px 20px 80px;
+    }
+    .light-wrapper{
+      padding: 50px 20px 50px;
+      gap: 0;
+    }
+  }
 </style>

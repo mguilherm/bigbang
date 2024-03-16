@@ -89,4 +89,24 @@ export default {
     padding: 0 96px 26px;
   }
 }
+
+@media @smartphones{
+  .container{
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+    padding: 10px 0 26px ;
+  }
+
+  .cards-wrapper {
+    
+    .cards-container{
+      // flex-direction: column;
+      overflow: scroll;
+      width: 100%;
+      padding: 0 0 26px;
+      justify-content: flex-start;
+    }
+  }
+}
 </style>

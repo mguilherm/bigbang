@@ -4,7 +4,7 @@
       <span class="container">
         <RTIcon />
         <h3>Análise Geral</h3>
-        <p>últimos 7 dias</p>
+        <p class="last-7days">últimos 7 dias</p>
       </span>
       <a href="">Ver tudo</a>
     </span>
@@ -99,6 +99,12 @@ div {
       font-size: 14px;
       font-weight: 500;
     }
+  }
+}
+
+@media @tablets {
+  div{
+    max-width: 768px;
   }
 }
 </style>

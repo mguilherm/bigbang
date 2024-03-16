@@ -57,7 +57,27 @@ ul {
 
     &.active{
       background: @pink;
-      
+    }
+  }
+}
+
+@media @tablets{
+  ul{
+    li{
+      padding: 8px 15px;
+    }
+  }
+}
+
+@media @smartphones{
+  ul{
+    min-width: unset;
+    overflow: scroll;
+    width: 100%;
+    padding: 0;
+    li{
+      padding: 4px 10px;
+      font-size: 12px;
     }
   }
 }

@@ -21,6 +21,12 @@
 <style lang="less" scoped>
   div {
     width: 100%;
-    padding: 46px 0 50px;
+    padding: 46px 0 0 ;
+  }
+
+  @media @tablets{
+    div{
+      padding: 30px 0 50px;
+    }
   }
 </style>
