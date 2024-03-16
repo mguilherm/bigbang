@@ -75,12 +75,12 @@ O projeto **BigBang** foi desenvolvido utilizando as seguintes tecnologias:
 
 ## Demonstração
 
-![Inserir vídeo em formato gif demonstrando a aplicação](src/assets/images/preview.gif)
+![Vídeo demonstrando a aplicação](src/assets/images/preview.gif)
 
 ---
 
 Com estas instruções, você deverá ser capaz de clonar o repositório, instalar as dependências e executar o projeto **BigBang** em seu ambiente local. 
 Se precisar de mais ajuda, sinta-se à vontade para entrar em contato comigo.
 
-Desenvolvido por Marcos Guilherme Silva, 2023.
+Desenvolvido por Marcos Guilherme Silva, 2024.
 Todos os direitos de uso de imagem e atribuições deste trabalho estão diretamente relacionados à BigBang Digital.
