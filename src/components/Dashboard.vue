@@ -46,7 +46,7 @@ export default {
 }
 
 .light-wrapper{
-  padding: 100px 100px 0;
+  padding: 100px 100px ;
   display: flex;
   flex-direction: row; 
   justify-content: space-between; 
